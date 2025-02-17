@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Home from "./Home";
+import About from "./components/About";
+import Home from "./components/Home";
 
 function App() {
-  // const x = prompt("enter");
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -25,7 +25,7 @@ function App() {
 
     <div>
       <Home></Home>
-      
+      {/* <About></About> */}
     </div>
   );
 }
