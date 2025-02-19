@@ -1,8 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import About from "./components/About";
-import Home from "./components/Home";
+import Text from "./18-02(useEffect)/Text";
+// import About from "./components/About";
+// import Home from "./components/Home";
+
 
 function App() {
   return (
@@ -24,8 +26,9 @@ function App() {
     // </div>
 
     <div>
-      <Home></Home>
+      {/* <Home></Home> */}
       {/* <About></About> */}
+      <Text></Text>
     </div>
   );
 }
