@@ -1,3 +1,8 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 .App {
   text-align: center;
 }
@@ -36,7 +41,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* 
 .b{
   height: 50px;
   width: 70px;
@@ -44,4 +49,4 @@
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   font-size: 15px;
-}
+} */

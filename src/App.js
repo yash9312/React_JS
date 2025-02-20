@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Text from "./18-02(useEffect)/Text";
+// import Text from "./18-02(useEffect)/Text";
+import { DayNight } from "./19-02(DN_Mode)/DayNight";
 // import About from "./components/About";
 // import Home from "./components/Home";
-
 
 function App() {
   return (
@@ -28,7 +28,8 @@ function App() {
     <div>
       {/* <Home></Home> */}
       {/* <About></About> */}
-      <Text></Text>
+      {/* <Text></Text> */}
+      <DayNight></DayNight>
     </div>
   );
 }

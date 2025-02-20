@@ -7,7 +7,7 @@ function Text() {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((json) => setdata(json));
-  });
+  }, []);
 
   return (
     <div
@@ -16,7 +16,7 @@ function Text() {
         flexWrap: "wrap",
         gap: "50px",
         marginLeft: "25px",
-        marginTop:"25px"
+        marginTop: "25px",
       }}
     >
       {data.map((e, i) => {
@@ -25,8 +25,8 @@ function Text() {
             style={{
               height: "250px",
               width: "250px",
-              boxShadow:"2px 2px 2px 2px grey",
-              borderRadius:"10px"
+              boxShadow: "2px 2px 2px 2px grey",
+              borderRadius: "10px",
             }}
           >
             <img
@@ -34,6 +34,7 @@ function Text() {
               src={e.image}
               alt=""
             />
+            {/* <button style={{width:"250px",height:"40px",border:"none"}}>55</button> */}
           </div>
         );
       })}
