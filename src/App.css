@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0%;
   margin: 0%;
 }
@@ -41,7 +41,7 @@
     transform: rotate(360deg);
   }
 }
-/* 
+
 .b{
   height: 50px;
   width: 70px;
@@ -50,3 +50,117 @@
   background-color: rgb(255, 255, 255);
   font-size: 15px;
 } */
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Form Container with Glassmorphism */
+.form-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 15px;
+  width: 380px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.8s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  
+}
+
+/* Form Heading */
+.form-container h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input Group Styling */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+/* Labels */
+.input-group label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: block;
+  text-align: center;
+}
+
+/* Input Fields */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Placeholder Styling */
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input Hover & Focus Effects */
+.input-group input:hover,
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ff4b2b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: #ff5733;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 87, 51, 0.5);
+}
+
+/* Message Styling */
+.message {
+  font-size: 14px;
+  margin-top: 10px;
+  color: yellow;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
