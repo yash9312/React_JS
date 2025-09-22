@@ -1,0 +1,7 @@
+/* css-lint-disable */
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark,.dark *));
+
+
+
